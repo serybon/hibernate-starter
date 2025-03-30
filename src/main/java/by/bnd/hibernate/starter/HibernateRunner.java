@@ -11,31 +11,26 @@ public class HibernateRunner {
     public static void main(String[] args) {
 
         Company company = Company.builder()
-                .name("Google")
+                .name("GDN")
                 .build();
         User user = User.builder()
-                .username("ivan10@gmail.com")
+                .username("ivan7@gmail.com")
                 .personalInfo(PersonalInfo.builder()
-                        .firstname("Vasil")
-                        .lastname("Ivanov")
+                        .firstname("FName")
+                        .lastname("LName")
                         .birthDate(new Birthday(LocalDate.of(1999, 02, 01)))
                         .build())
                 .role(Role.ADMIN)
                 .company(company)
                 .build();
-        log.info("User object in transient state {} , {}", user, user.getPersonalInfo().getBirthDate());
+
         try (var sessionFactory = HibernateUtil.buildSessionFactory()) {
             try (var session1 = sessionFactory.openSession()) {
                 session1.beginTransaction();
+
+                session1.persist(company);
                 session1.saveOrUpdate(user);
 
-
-//                user.setFirstname("Ivan");
-//                log.warn("User's field \"firstname\" was changed to {}", user.getFirstname());
-//                System.out.println(session1.isDirty());
-//                session1.get(User.class, "jdoe@gmail.com");
-//                System.out.println(user);
-//                log.warn("User:  {} Session: {}", user, session1);
                 session1.getTransaction().commit();
             }
 

@@ -1,12 +1,12 @@
 package by.bnd.hibernate.starter;
 
-import by.bnd.hibernate.starter.entity.Birthday;
-import by.bnd.hibernate.starter.entity.User;
+import by.bnd.hibernate.starter.entity.*;
+import by.bnd.hibernate.starter.util.HibernateUtil;
 import jakarta.persistence.Column;
 import jakarta.persistence.Table;
+import lombok.Cleanup;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
 import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,25 +15,117 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.Random;
 import java.util.stream.Collectors;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HibernateRunnerTest {
     @Test
-    public void testHibernateApi() throws SQLException, IllegalAccessException {
-        var user = User.builder()
-                .username("jdoe111@gmail.com")
-                .firstname("Vasil")
-                .lastname("Vasilev")
-                .birthDate(new Birthday(LocalDate.of(2000, 02, 01)))
+    public void checkManyToMany(){
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+
+        session.beginTransaction();
+        Chat chat = Chat.builder()
+                .name("secondChat")
                 .build();
+        User user1 = session.get(User.class,15L);
+        user1.addChat(chat);
+        User user2 = session.get(User.class, 12L);
+        user2.addChat(chat);
+        session.save(chat);
+
+        session.getTransaction().commit();
+    }
+    @Test
+    public void checkOneToOne() {
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+
+        session.beginTransaction();
+        User user = User.builder()
+                .username("ivan75@gmail.com")
+                .build();
+        Profile profile = Profile.builder()
+                .language("ru")
+                .street("Pobedy 1")
+                .build();
+        session.save(user);
+        profile.setUser(user);
+        session.save(profile);
+
+
+
+
+        session.getTransaction().commit();
+    }
+
+
+
+    @Test
+    public void checkOrphanRemoval() {
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+        session.beginTransaction();
+            Company company = session.get(Company.class, 1);
+            company.getUsers().removeIf(user -> user.getId().equals(10));
+        session.getTransaction().commit();
+    }
+    @Test
+    public void addNewUserAndCompany() {
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+        session.beginTransaction();
+        Random random = new Random();
+        Company company = Company.builder()
+                .name("Google" + random.nextInt(100))
+                .build();
+        User user = User.builder()
+                .username("ivan" + random.nextInt(100) + "@gmail.com")
+                .build();
+        company.addUser(user);
+        session.save(company);
+
+
+        session.getTransaction().commit();
+    }
+
+    @Test
+    public void checkOneToMany() {
+
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+        session.beginTransaction();
+        var company = session.get(Company.class, 1);
+        company.getUsers().forEach(System.out::println);
+
+
+        session.getTransaction().commit();
+    }
+
+
+    @Test
+    public void testHibernateApi() throws SQLException, IllegalAccessException {
+        Company company = Company.builder()
+                .name("SAP2")
+                .build();
+        User user = User.builder()
+                .username("ivan6@gmail.com")
+                .personalInfo(PersonalInfo.builder()
+                        .firstname("FName")
+                        .lastname("LName")
+                        .birthDate(new Birthday(LocalDate.of(1999, 02, 01)))
+                        .build())
+                .role(Role.ADMIN)
+                .company(company)
+                .build();
+
         var sql = """
                 Insert into 
                 %s
                 (%s)
                 values (%s)
                 """;
+
         var tableName = Optional.ofNullable(user.getClass().getAnnotation(Table.class))
                 .map(table -> table.schema() + "." + table.name())
                 .orElse(user.getClass().getName());

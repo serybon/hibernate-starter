@@ -10,9 +10,11 @@
         <property name="connection.password">admin</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+<!--        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>-->
       <mapping class="by.bnd.hibernate.starter.entity.User"/>
       <mapping class="by.bnd.hibernate.starter.entity.Company"/>
+        <mapping class="by.bnd.hibernate.starter.entity.Profile"/>
+        <mapping class="by.bnd.hibernate.starter.entity.Chat"/>
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->

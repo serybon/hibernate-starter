@@ -465,3 +465,607 @@
 	Minimum pool size: 1
 	Maximum pool size: 20
 [2025-03-30 15:17:43, 336] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:41:46, 280] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:41:46, 599] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:41:46, 713] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:41:47, 066] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:41:47, 086] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:41:48, 049] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:41:48, 095] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 42P01
+[2025-03-30 15:41:48, 096] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: relation "users_id_seq_1" does not exist
+  Позиция: 16
+[2025-03-30 15:42:16, 834] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:42:17, 164] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:42:17, 267] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:42:17, 528] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:42:17, 547] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:42:18, 539] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:44:12, 424] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:44:12, 743] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:44:12, 850] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:44:13, 113] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:44:13, 134] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:44:14, 148] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:46:10, 129] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:46:10, 442] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:46:10, 555] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:46:10, 813] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:46:10, 834] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:46:11, 824] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:46:24, 245] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:46:24, 575] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:46:24, 682] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:46:25, 015] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:46:25, 033] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:46:25, 972] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:46:26, 032] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 23505
+[2025-03-30 15:46:26, 032] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: duplicate key value violates unique constraint "company_name_key"
+  Подробности: Key (name)=(Yandex) already exists.
+[2025-03-30 15:47:37, 456] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:47:37, 765] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:47:37, 871] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:47:38, 218] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:47:38, 341] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:47:39, 324] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:48:38, 064] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:48:38, 385] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:48:38, 551] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:48:38, 806] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:48:38, 825] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:48:39, 803] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:52:02, 973] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:52:03, 291] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:52:03, 392] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:52:03, 658] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:52:03, 684] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:52:04, 638] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:54:52, 937] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:54:53, 288] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:54:53, 480] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:54:53, 724] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:54:53, 743] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:54:54, 713] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:57:05, 934] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:57:06, 243] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:57:06, 343] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:57:06, 607] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:57:06, 628] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:57:07, 576] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 15:57:39, 122] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 15:57:39, 451] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 15:57:39, 632] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 15:57:39, 907] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 15:57:39, 928] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 15:57:41, 143] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:01:22, 362] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:01:22, 704] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:01:22, 882] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:01:23, 309] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:01:23, 329] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:01:24, 560] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:02:57, 927] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:02:58, 268] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:02:58, 439] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:02:58, 700] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:02:58, 719] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:02:59, 798] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:06:39, 763] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:06:40, 103] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:06:40, 273] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:06:40, 532] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:06:40, 551] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:06:41, 617] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:17:57, 763] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:17:58, 087] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:17:58, 205] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:17:58, 417] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:17:58, 432] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:17:59, 464] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:18:52, 206] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:18:52, 547] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:18:52, 677] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:18:52, 896] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:18:52, 912] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:18:53, 905] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:21:44, 340] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:21:44, 693] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:21:44, 803] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:21:45, 068] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:21:45, 090] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:21:46, 100] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:21:46, 156] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 23505
+[2025-03-30 16:21:46, 156] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: duplicate key value violates unique constraint "company_name_key"
+  Подробности: Key (name)=(Google) already exists.
+[2025-03-30 16:22:37, 035] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:22:37, 351] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:22:37, 462] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:22:37, 717] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:22:37, 737] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:22:38, 781] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:22:56, 194] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:22:56, 517] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:22:56, 648] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:22:56, 862] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:22:56, 879] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:22:57, 887] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:24:05, 581] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:24:05, 907] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:24:06, 038] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:24:06, 258] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:24:06, 274] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:24:07, 270] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:25:18, 065] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:25:18, 422] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:25:18, 557] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:25:18, 782] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:25:18, 796] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:25:19, 818] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:25:53, 059] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:25:53, 378] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:25:53, 505] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:25:53, 739] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-30 16:25:53, 754] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:25:54, 756] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:27:00, 125] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:27:00, 453] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:27:00, 585] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:27:00, 999] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:27:01, 992] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:30:02, 119] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:30:02, 458] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:30:02, 585] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:30:02, 823] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:30:03, 847] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:31:32, 113] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:31:32, 423] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:31:32, 552] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:31:32, 795] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:31:33, 795] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:34:09, 930] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:34:10, 241] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:34:10, 366] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:34:10, 615] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:34:11, 606] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:36:56, 142] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:36:56, 464] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:36:56, 591] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:36:56, 857] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:36:57, 947] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:44:55, 099] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:44:55, 428] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:44:55, 559] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:44:55, 819] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:44:56, 807] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:46:20, 354] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:46:20, 764] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:46:20, 909] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:46:21, 199] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:46:22, 185] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:50:36, 491] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:50:36, 779] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:50:36, 899] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:50:37, 151] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:50:38, 136] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:51:24, 346] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:51:24, 669] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:51:24, 800] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:51:25, 025] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:51:26, 033] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:53:13, 919] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:53:14, 234] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:53:14, 360] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:53:14, 604] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:53:15, 896] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:55:17, 220] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:55:17, 503] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:55:17, 613] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:55:17, 879] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:55:18, 873] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:55:27, 707] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:55:28, 024] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:55:28, 150] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:55:28, 387] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:55:29, 384] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:58:21, 495] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:58:21, 804] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:58:21, 929] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:58:22, 164] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:58:23, 144] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 16:59:50, 831] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 16:59:51, 139] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 16:59:51, 266] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 16:59:51, 691] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 16:59:52, 648] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 17:00:32, 963] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 17:00:33, 277] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 17:00:33, 450] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 17:00:33, 767] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 17:00:34, 872] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 17:01:56, 492] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 17:01:56, 765] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 17:01:56, 943] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 17:01:57, 272] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 17:01:58, 430] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 17:22:15, 761] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 17:22:16, 137] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 17:22:16, 281] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 17:22:16, 575] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 17:22:17, 681] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 17:24:02, 657] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 17:24:02, 986] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 17:24:03, 145] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 17:24:03, 408] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 17:24:04, 439] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 17:27:50, 153] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 17:27:50, 547] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 17:27:50, 714] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 17:27:50, 996] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 17:27:51, 996] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 17:27:52, 058] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 23505
+[2025-03-30 17:27:52, 058] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: duplicate key value violates unique constraint "users_username_key"
+  Подробности: Key (username)=(ivan77@gmail.com) already exists.
+[2025-03-30 17:28:00, 565] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 17:28:00, 865] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 17:28:00, 993] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 17:28:01, 248] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 17:28:02, 238] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 17:28:02, 319] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 42P01
+[2025-03-30 17:28:02, 320] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: relation "profile" does not exist
+  Позиция: 13
+[2025-03-30 17:28:52, 397] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 17:28:52, 723] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 17:28:52, 853] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 17:28:53, 110] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 17:28:54, 135] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 20:27:57, 676] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 20:27:58, 185] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 20:27:58, 393] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 20:27:58, 814] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 20:28:00, 519] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 20:55:54, 399] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 20:55:54, 734] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 20:55:54, 861] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 20:55:55, 131] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 20:55:56, 186] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 20:59:48, 257] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 20:59:48, 644] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 20:59:48, 809] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 20:59:49, 197] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 20:59:50, 305] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 20:59:50, 428] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 23505
+[2025-03-30 20:59:50, 428] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: duplicate key value violates unique constraint "chat_name_key"
+  Подробности: Key (name)=(firstChat) already exists.
+[2025-03-30 21:00:51, 469] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 21:00:51, 840] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 21:00:51, 979] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 21:00:52, 275] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 21:00:53, 328] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
