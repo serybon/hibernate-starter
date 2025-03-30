@@ -1,0 +1,7 @@
+[2025-03-30 13:59:30, 053] TRACE [org.hibernate.orm.jdbc.extract: 24]- extracted value (3:VARCHAR) -> [Ivan]
+[2025-03-30 13:59:30, 053] TRACE [org.hibernate.orm.jdbc.extract: 24]- extracted value (4:VARCHAR) -> [Ivanov]
+[2025-03-30 13:59:30, 054] TRACE [org.hibernate.orm.jdbc.extract: 24]- extracted value (5:VARCHAR) -> [ADMIN]
+[2025-03-30 13:59:30, 054] TRACE [org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl: 117]- Releasing result set [org.postgresql.jdbc.PgResultSet@7f0a133d]
+[2025-03-30 13:59:30, 054] TRACE [org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl: 169]- Closing result set [org.postgresql.jdbc.PgResultSet@7f0a133d]
+[2025-03-30 13:59:30, 054] TRACE [org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl: 96]- Releasing statement [select null,u1_0.birth_date,u1_0.firstname,u1_0.lastname,u1_0.role from public.users u1_0 where u1_0.username=('jdoe@gmail.com')]
+[2025-03-30 13:59:30, 055] TRACE [org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl: 186]- Closing prepared statement [select null,u1_0.birth_date,u1_0.firstname,u1_0.lastname,u1_0.role from public.users u1_0 where u1_0.username=('jdoe@gmail.com')]
