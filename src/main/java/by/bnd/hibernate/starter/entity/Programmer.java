@@ -15,7 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@DiscriminatorValue("programmer")
 public class Programmer extends User {
     @Enumerated(EnumType.STRING)
     private Language language;
