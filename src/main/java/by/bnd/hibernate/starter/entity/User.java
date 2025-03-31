@@ -10,13 +10,14 @@ import java.util.List;
 @ToString(exclude = {"company", "profile", "userChats"})
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+//@Builder
 @Entity
 @Data
 @Table(name = "users", schema = "public")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class User {
     @Id
-    @GeneratedValue(generator = "user_gen", strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(generator = "user_gen", strategy = GenerationType.IDENTITY)
     @SequenceGenerator(name = "user_gen", sequenceName = "users_id_seq", allocationSize = 1)
     private Long id;
 
@@ -37,7 +38,7 @@ public class User {
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Profile profile;
 
-    @Builder.Default
+//    @Builder.Default
     @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
 
