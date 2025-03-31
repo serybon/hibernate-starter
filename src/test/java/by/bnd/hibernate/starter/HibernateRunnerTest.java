@@ -31,15 +31,15 @@ class HibernateRunnerTest {
 
         var programmer = Programmer
                 .builder()
-                .username("ivan2@gmail.com")
-                .language(Language.KOTLIN)
+                .username("ivan3@gmail.com")
+                .language(Language.PHP)
                 .company(company).build();
         session.save(programmer);
 
         var manager = Manager
                 .builder()
-                .username("petr2@gmail.com")
-                .project("JavaEnterprise")
+                .username("petr3@gmail.com")
+                .project("JavaCore")
                 .company(company).build();
         session.save(manager);
         session.flush();

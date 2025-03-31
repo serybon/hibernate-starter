@@ -14,7 +14,8 @@ import java.util.List;
 @Entity
 @Data
 @Table(name = "users", schema = "public")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "type")
 public class User {
     @Id
     @GeneratedValue(generator = "user_gen", strategy = GenerationType.IDENTITY)
