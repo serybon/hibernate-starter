@@ -1,16 +1,13 @@
 package by.bnd.hibernate.starter.entity;
 
-import by.bnd.hibernate.starter.converter.BirthdayConverter;
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.GenericGenerator;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
+
 @EqualsAndHashCode(of = "username")
-@ToString(exclude = {"company", "profile"})
+@ToString(exclude = {"company", "profile", "userChats"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -41,15 +38,9 @@ public class User {
     private Profile profile;
 
     @Builder.Default
-    @ManyToMany
-    @JoinTable(name = "users_chat",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "chat_id"))
-    private List<Chat> chats = new ArrayList<>();
+    @OneToMany(mappedBy = "user")
+    private List<UserChat> userChats = new ArrayList<>();
 
-    public void addChat(Chat chat) {
-        chats.add(chat);
-        chat.getUsers().add(this);
 
-    }
 }
+

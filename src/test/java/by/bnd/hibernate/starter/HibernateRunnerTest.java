@@ -8,10 +8,8 @@ import lombok.Cleanup;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Field;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Optional;
@@ -25,14 +23,17 @@ class HibernateRunnerTest {
         @Cleanup var session = sessionFactory.openSession();
 
         session.beginTransaction();
-        Chat chat = Chat.builder()
-                .name("secondChat")
+        Chat chat = session.get(Chat.class,3L);
+        User user1 = session.get(User.class,12L);
+        UserChat userChat = UserChat.builder()
+                .createdAt(Instant.now())
+                .createdBy("John Doe")
                 .build();
-        User user1 = session.get(User.class,15L);
-        user1.addChat(chat);
-        User user2 = session.get(User.class, 12L);
-        user2.addChat(chat);
-        session.save(chat);
+
+        userChat.setUser(user1);
+        userChat.setChat(chat);
+
+        session.save(userChat);
 
         session.getTransaction().commit();
     }

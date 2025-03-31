@@ -22,7 +22,7 @@ public class Chat {
     @Column(unique = true, nullable = false)
     private String name;
 
-    @ManyToMany(mappedBy = "chats")
+    @OneToMany(mappedBy = "chat")
     @Builder.Default
-    private List<User> users = new ArrayList<>();
+    private List<UserChat> userChats = new ArrayList<>();
 }

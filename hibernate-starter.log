@@ -1069,3 +1069,95 @@
 	Minimum pool size: 1
 	Maximum pool size: 20
 [2025-03-30 21:00:53, 328] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 21:39:34, 157] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 21:39:34, 476] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 21:39:34, 612] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 21:39:34, 856] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 21:39:35, 923] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 21:39:36, 038] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 42P01
+[2025-03-30 21:39:36, 038] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: relation "userchat" does not exist
+  Позиция: 13
+[2025-03-30 21:39:36, 044] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.Chat.userChats#3]
+[2025-03-30 21:39:36, 044] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.User.userChats#12]
+[2025-03-30 21:41:39, 344] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 21:41:39, 670] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 21:41:39, 797] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 21:41:40, 243] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 21:41:41, 320] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 21:41:41, 455] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 42703
+[2025-03-30 21:41:41, 455] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: column "createdat" of relation "users_chat" does not exist
+  Позиция: 33
+[2025-03-30 21:41:41, 458] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.Chat.userChats#3]
+[2025-03-30 21:41:41, 459] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.User.userChats#12]
+[2025-03-30 21:42:03, 164] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 21:42:03, 487] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 21:42:03, 611] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 21:42:03, 862] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 21:42:04, 925] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 21:42:05, 044] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 42P01
+[2025-03-30 21:42:05, 044] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: relation "public.users_chat" does not exist
+  Позиция: 13
+[2025-03-30 21:42:05, 048] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.Chat.userChats#3]
+[2025-03-30 21:42:05, 048] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.User.userChats#12]
+[2025-03-30 21:42:51, 320] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 21:42:51, 651] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 21:42:51, 796] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 21:42:52, 211] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 21:42:53, 270] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 21:42:53, 385] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145]- SQL Error: 0, SQLState: 42703
+[2025-03-30 21:42:53, 385] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150]- ERROR: column "createdat" of relation "users_chat" does not exist
+  Позиция: 33
+[2025-03-30 21:42:53, 388] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.Chat.userChats#3]
+[2025-03-30 21:42:53, 389] INFO  [org.hibernate.collection.spi.AbstractPersistentCollection: 683]- HHH000496: Detaching an uninitialized collection with queued operations from a session: [by.bnd.hibernate.starter.entity.User.userChats#12]
+[2025-03-30 21:43:44, 715] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 21:43:45, 030] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 21:43:45, 161] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 21:43:45, 413] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 21:43:46, 556] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-30 21:45:58, 712] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-30 21:45:59, 055] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-30 21:45:59, 184] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-30 21:45:59, 429] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: org.postgresql.Driver
+	Database version: 17.4
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-30 21:46:00, 509] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)

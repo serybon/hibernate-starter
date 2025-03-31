@@ -15,6 +15,7 @@
       <mapping class="by.bnd.hibernate.starter.entity.Company"/>
         <mapping class="by.bnd.hibernate.starter.entity.Profile"/>
         <mapping class="by.bnd.hibernate.starter.entity.Chat"/>
+        <mapping class="by.bnd.hibernate.starter.entity.UserChat"/>
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
