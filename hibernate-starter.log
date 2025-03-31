@@ -1161,3 +1161,18 @@
 	Minimum pool size: 1
 	Maximum pool size: 20
 [2025-03-30 21:46:00, 509] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-31 10:30:27, 832] INFO  [org.hibernate.Version: 44]- HHH000412: Hibernate ORM core version 6.6.0.Final
+[2025-03-31 10:30:28, 720] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator: 50]- HHH000026: Second-level cache disabled
+[2025-03-31 10:30:28, 864] WARN  [org.hibernate.orm.connections.pooling: 86]- HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-03-31 10:30:29, 035] WARN  [org.hibernate.orm.deprecation: 153]- HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-03-31 10:30:29, 119] INFO  [org.hibernate.orm.connections.pooling: 158]- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:inMemDbBND]
+	Database driver: org.h2.Driver
+	Database version: 2.2.224
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-03-31 10:30:30, 370] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59]- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-03-31 10:30:30, 390] INFO  [org.hibernate.orm.connections.access: 52]- HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@18907af2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2025-03-31 10:30:30, 398] INFO  [org.hibernate.orm.connections.access: 52]- HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@19105a87] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.

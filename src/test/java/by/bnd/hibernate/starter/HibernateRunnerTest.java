@@ -17,6 +17,21 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 class HibernateRunnerTest {
+
+    @Test
+    public void checkH2Database() {
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+
+        session.beginTransaction();
+
+        var company = Company.builder()
+                        .name("Google").build();
+        session.save(company);
+
+        session.getTransaction().commit();
+    }
+
     @Test
     public void checkManyToMany(){
         @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
