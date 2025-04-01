@@ -1,6 +1,6 @@
 package by.bnd.hibernate.starter.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,7 +26,7 @@ public class Profile {
 
     public void setUser(User user) {
         this.user = user;
-        user.setProfile(this);
+        //user.setProfile(this);
     }
 
 }

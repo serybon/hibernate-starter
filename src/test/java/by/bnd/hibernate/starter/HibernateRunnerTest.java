@@ -2,21 +2,40 @@ package by.bnd.hibernate.starter;
 
 import by.bnd.hibernate.starter.entity.*;
 import by.bnd.hibernate.starter.util.HibernateUtil;
-import jakarta.persistence.Column;
-import jakarta.persistence.Table;
 import lombok.Cleanup;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Field;
 import java.sql.*;
 import java.time.Instant;
-import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Optional;
-import java.util.Random;
-import java.util.stream.Collectors;
 
 class HibernateRunnerTest {
+
+    @Test
+    void checkHQL() {
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+
+        session.beginTransaction();
+        String name = "Pavel";
+        String companyName = "EPAM";
+//        session.createQuery(
+//                        """
+//                                select u from User u
+//                                left join u.company c
+//                                where u.personalInfo.firstname = :firstname
+//                                and c.name = :company
+//                                """)
+//                .setParameter("firstname", name)
+//                .setParameter("company", companyName)
+//                .list().forEach(System.out::println);
+
+//        session.createNamedQuery("findUserByNameAndCompany")
+//                .setParameter("firstname", name)
+//                .setParameter("company", companyName)
+//                .list().forEach(System.out::println);
+        session.createQuery("update User u set u.role = 'USER'").executeUpdate();
+        session.getTransaction().commit();
+    }
 
     @Test
     void checkInheritance() {
@@ -25,7 +44,7 @@ class HibernateRunnerTest {
 
         session.beginTransaction();
 
-        var company = Company.builder()
+        /*var company = Company.builder()
                 .name("Epam").build();
         session.save(company);
 
@@ -46,7 +65,7 @@ class HibernateRunnerTest {
         session.clear();
         var programmer1 = session.get(Programmer.class, 1L);
         var manager1 = session.get(User.class, 2L);
-
+*/
         session.getTransaction().commit();
     }
 
@@ -62,6 +81,7 @@ class HibernateRunnerTest {
         session.save(company);
 
         session.getTransaction().commit();
+
     }
 
     @Test
@@ -85,23 +105,23 @@ class HibernateRunnerTest {
 
     @Test
     public void checkOneToOne() {
-//        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
-//        @Cleanup var session = sessionFactory.openSession();
-//
-//        session.beginTransaction();
-//        User user = User.builder()
-//                .username("ivan75@gmail.com")
-//                .build();
-//        Profile profile = Profile.builder()
-//                .language("ru")
-//                .street("Pobedy 1")
-//                .build();
-//        session.save(user);
-//        profile.setUser(user);
-//        session.save(profile);
-//
-//
-//        session.getTransaction().commit();
+        @Cleanup var sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup var session = sessionFactory.openSession();
+
+        session.beginTransaction();
+        User user = User.builder()
+                .username("petr@gmail.com")
+                .build();
+        Profile profile = Profile.builder()
+                .language("ru")
+                .street("Pobedy 2")
+                .build();
+        session.save(user);
+        profile.setUser(user);
+        session.save(profile);
+
+
+        session.getTransaction().commit();
     }
 
 
