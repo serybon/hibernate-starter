@@ -1,6 +1,6 @@
 package by.bnd.hibernate.starter.entity;
 
-import jakarta.persistence.MappedSuperclass;
+import javax.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
 

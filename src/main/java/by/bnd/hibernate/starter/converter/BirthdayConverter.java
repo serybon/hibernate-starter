@@ -1,7 +1,7 @@
 package by.bnd.hibernate.starter.converter;
 
 import by.bnd.hibernate.starter.entity.Birthday;
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AttributeConverter;
 
 import java.sql.Date;
 import java.util.Optional;

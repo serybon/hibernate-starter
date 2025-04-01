@@ -1,16 +1,24 @@
 package by.bnd.hibernate.starter.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+
 import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedQuery(name = "findUserByNameAndCompany", query = """
+        select u from User u
+        left join u.company c
+        where u.personalInfo.firstname = :firstname
+        and c.name = :company
+        """)
 @EqualsAndHashCode(of = "username")
-@ToString(exclude = {"company", "profile", "userChats"})
+@ToString(exclude = {"company", "userChats"})
+//@ToString(exclude = {"company", "profile", "userChats"})
 @NoArgsConstructor
 @AllArgsConstructor
-//@Builder
+@Builder
 @Entity
 @Data
 @Table(name = "users", schema = "public")
@@ -35,13 +43,17 @@ public class User {
     @JoinColumn(name = "company_id")
     private Company company;
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private Profile profile;
+//    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+//    private Profile profile;
 
-//    @Builder.Default
+    @Builder.Default
     @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
 
+
+    public String fullName() {
+        return personalInfo.getFirstname() + " " + personalInfo.getLastname();
+    }
 
 }
 
