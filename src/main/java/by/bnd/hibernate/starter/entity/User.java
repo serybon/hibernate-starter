@@ -50,7 +50,7 @@ public class User {
     private List<UserChat> userChats = new ArrayList<>();
 
     @Builder.Default
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "receiver")
     private List<Payment> userPayments = new ArrayList<>();
 
 
