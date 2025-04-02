@@ -16,6 +16,7 @@
         <mapping class="by.bnd.hibernate.starter.entity.Profile"/>
         <mapping class="by.bnd.hibernate.starter.entity.Chat"/>
         <mapping class="by.bnd.hibernate.starter.entity.UserChat"/>
+        <mapping class="by.bnd.hibernate.starter.entity.Payment"/>
 <!--        <mapping class="by.bnd.hibernate.starter.entity.Programmer"/>-->
 <!--        <mapping class="by.bnd.hibernate.starter.entity.Manager"/>-->
 

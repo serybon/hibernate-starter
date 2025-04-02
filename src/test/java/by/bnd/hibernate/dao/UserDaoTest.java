@@ -19,6 +19,7 @@ public class UserDaoTest {
     private static SessionFactory sessionFactory;
     private static UserDao userDao;
 
+
     @BeforeAll
     public static void start() {
         sessionFactory = HibernateUtil.buildSessionFactory();
@@ -147,7 +148,10 @@ public class UserDaoTest {
         assertThat(selectedUsers).isNotEmpty();
         session.getTransaction().commit();
     }
-    /** Возвращает всех сотрудников указанной компании */
+
+    /**
+     * Возвращает всех сотрудников указанной компании
+     */
     @Test
     void findAllByCompanyName() {
         @Cleanup Session session = sessionFactory.openSession();
@@ -160,5 +164,32 @@ public class UserDaoTest {
 
         session.getTransaction().commit();
     }
+
+    @Test
+    void checkFindAveragePaymentAmountByFirstAndLastName() {
+        @Cleanup Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        Double avg = userDao.findAveragePaymentAmountByFirstAndLastName(session, "Pavel", "Bobrov");
+        System.out.println(avg);
+        assertThat(avg).isNotNull();
+        assertThat(avg == 305.00).isTrue();
+
+
+    }
+
+//    @Test
+//    void findCompanyNamesWithAgvUserPaymentOrderedByCompanyName() {
+//        @Cleanup Session session = sessionFactory.openSession();
+//        session.beginTransaction();
+//        List<Tuple> results = userDao.findCompanyNamesWithAgvUserPaymentsOrderedByCompanyName(session);
+//
+//        List<String> orgNames = results.stream().map(a -> (String) a.get(0,String.class)).collect(toList());
+//        assertThat(orgNames).contains("EPAM","YANDEX","GOOGLE");
+//
+//        List<Double> orgAvgPayments = results.stream().map(a -> (Double) a.get(1,Double.class)).collect(toList());
+//        assertThat(orgAvgPayments).contains(400.0,350.0,300.0 );
+//
+//        session.getTransaction().commit();
+//    }
 }
 
