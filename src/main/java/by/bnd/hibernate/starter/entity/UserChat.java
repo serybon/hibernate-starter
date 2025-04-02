@@ -1,18 +1,14 @@
 package by.bnd.hibernate.starter.entity;
 
-import javax.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.io.Serializable;
-import java.time.Instant;
+import javax.persistence.*;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@EqualsAndHashCode(callSuper = false)
 @Builder
 @Table(name = "users_chat")
 public class UserChat extends AuditableEntity<Long> {

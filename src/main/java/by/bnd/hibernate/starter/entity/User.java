@@ -1,9 +1,8 @@
 package by.bnd.hibernate.starter.entity;
 
-import javax.persistence.*;
-
 import lombok.*;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,9 +49,17 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
 
+    @Builder.Default
+    @OneToMany(mappedBy = "user")
+    private List<Payment> userPayments = new ArrayList<>();
+
 
     public String fullName() {
         return personalInfo.getFirstname() + " " + personalInfo.getLastname();
+    }
+
+    public long getAge(){
+        return personalInfo.getAge();
     }
 
 }
