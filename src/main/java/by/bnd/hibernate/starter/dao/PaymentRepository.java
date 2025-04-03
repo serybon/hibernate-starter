@@ -1,10 +1,11 @@
 package by.bnd.hibernate.starter.dao;
 
 import by.bnd.hibernate.starter.entity.Payment;
-import org.hibernate.SessionFactory;
+
+import javax.persistence.EntityManager;
 
 public class PaymentRepository extends BaseRepository<Long, Payment> {
-    public PaymentRepository(SessionFactory sessionFactory) {
-        super(sessionFactory, Payment.class);
+    public PaymentRepository(EntityManager entityManager) {
+        super(entityManager, Payment.class);
     }
 }
