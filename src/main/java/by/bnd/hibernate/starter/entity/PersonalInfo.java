@@ -1,16 +1,15 @@
 package by.bnd.hibernate.starter.entity;
 
 import by.bnd.hibernate.starter.converter.BirthdayConverter;
-import javax.persistence.Column;
-import javax.persistence.Convert;
-import javax.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serial;
-import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.Embeddable;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
@@ -25,6 +24,7 @@ public class PersonalInfo {
     private String lastname;
     @Convert(converter = BirthdayConverter.class)
     @Column(name = "birth_date")
+    @NotNull
     private Birthday birthDate;
 
     public long getAge(){

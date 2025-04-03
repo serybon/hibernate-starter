@@ -14,10 +14,10 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 @org.hibernate.annotations.Cache(usage =   CacheConcurrencyStrategy.READ_WRITE, region = "Companies")
-public class Company implements BaseEntity<Long> {
+public class Company implements BaseEntity<Integer> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     @Column(unique = true, nullable = false)
     private String name;
     @Builder.Default
