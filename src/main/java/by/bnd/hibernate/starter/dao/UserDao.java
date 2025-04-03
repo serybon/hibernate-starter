@@ -1,6 +1,8 @@
 package by.bnd.hibernate.starter.dao;
 
+import by.bnd.hibernate.starter.entity.Payment;
 import by.bnd.hibernate.starter.entity.User;
+import com.querydsl.core.Tuple;
 import com.querydsl.core.types.Order;
 import com.querydsl.core.types.OrderSpecifier;
 import com.querydsl.jpa.impl.JPAQuery;
@@ -17,11 +19,6 @@ import static by.bnd.hibernate.starter.entity.QUser.user;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UserDao {
 
-    /**Возвращает всех сотрудников*/
-    public List<User> findAll(Session session) {
-
-        return new JPAQuery<User>(session).select(user).from(user).fetch();
-    }
 
     private static final UserDao INSTANCE = new UserDao();
 
@@ -29,26 +26,43 @@ public class UserDao {
         return INSTANCE;
     }
 
-    /**Возвращает всех сотрудников c заданным именем*/
-    public List<User> findAllByFirstName(Session session,String firstName) {
+
+    /**
+     * Возвращает всех сотрудников
+     */
+    public List<User> findAll(Session session) {
+        return new JPAQuery<User>(session).select(user).from(user).fetch();
+    }
+
+    /**
+     * Возвращает всех сотрудников c заданным именем
+     */
+    public List<User> findAllByFirstName(Session session, String firstName) {
         return new JPAQuery<User>(session).select(user).from(user)
                 .where(user.personalInfo().firstname.eq(firstName)).fetch();
     }
 
-    /**Возвращает первые {limit} сотрудников, упорядоченных по дате рождения*/
-    public List<User> findLimitedUsersOrderedByBirthDate(Session session,int limit) {
+    /**
+     * Возвращает первые {limit} сотрудников, упорядоченных по дате рождения
+     */
+    public List<User> findLimitedUsersOrderedByBirthDate(Session session, int limit) {
         return new JPAQuery<User>(session).select(user).from(user)
                 .orderBy(new OrderSpecifier(Order.ASC, user.personalInfo().birthDate))
                 .limit(limit).fetch();
     }
-    /** Возвращает всех сотрудников указанной компании */
-    public List<User> findAllByCompanyName(Session session,String companyName) {
+
+    /**
+     * Возвращает всех сотрудников указанной компании
+     */
+    public List<User> findAllByCompanyName(Session session, String companyName) {
         return new JPAQuery<User>(session).select(user).from(company)
-                .join(company.users,user)
+                .join(company.users, user)
                 .where(company.name.eq(companyName))
                 .orderBy(new OrderSpecifier(Order.ASC, user.personalInfo().lastname))
                 .fetch();
     }
+
+
 //    public List<Payment> findAllPaymentsByCompanyName(Session session, String companyName) {
 //        var cb = session.getCriteriaBuilder();
 //        var criteria = cb.createQuery(Payment.class);
@@ -62,8 +76,8 @@ public class UserDao {
                 .from(payment)
                 .join(payment.receiver(), user)
                 .where(user.personalInfo().firstname.eq(firstName)
-                .and(user.personalInfo().lastname.eq(lastName)))
-                        .fetchOne();
+                        .and(user.personalInfo().lastname.eq(lastName)))
+                .fetchOne();
     }
 
 //    public List<Tuple> findCompanyNamesWithAgvUserPaymentsOrderedByCompanyName(Session session) {
@@ -76,14 +90,27 @@ public class UserDao {
 //                .fetch();
 //    }
 
-    /**Возвращает средний возраст всех сотрудников каждой компании*/
-//    public List<Tuple> findCompanyNamesWithAgvUserPaymentsOrderedByCompanyName(Session session) {
-//        return new JPAQuery<Tuple>(session)
-//                .select(company.name, user.getAge())
-//                .from(company)
-//                .join(user).on(user.companyId.eq(company.id)) // Предполагается, что у вас есть связь между Company и User
-//                .groupBy(company.name)
-//                .orderBy(company.name.asc())
-//                .fetch();
-//    }
+    /**
+     * Возвращает средний возраст всех сотрудников каждой компании
+     */
+    public List<Tuple> findCompanyNamesWithAgvUserPaymentsOrderedByCompanyName(Session session) {
+        return new JPAQuery<Tuple>(session)
+                .select(company.name, user)
+                .from(company)
+                .join(user).on(company.eq(user.company())) // Предполагается, что у вас есть связь между Company и User
+                .groupBy(company.name)
+                .orderBy(company.name.asc())
+                .fetch();
+    }
+
+    public List<Payment> findAllPaymentsByCompanyName(Session session, String companyName) {
+        return new JPAQuery<Payment>(session)
+                .select(payment)
+                .from(company)
+                .join(company.users, user)
+                .join(user.userPayments, payment)
+                .where(company.name.eq(companyName))
+                .orderBy(user.personalInfo().firstname.asc(), payment.amount.asc())
+                .fetch();
+    }
 }

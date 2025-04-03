@@ -1,6 +1,9 @@
 package by.bnd.hibernate.starter.entity;
 
 import lombok.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.FetchProfile;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -12,9 +15,11 @@ import java.util.List;
         where u.personalInfo.firstname = :firstname
         and c.name = :company
         """)
+@FetchProfile(name = "withCompany", fetchOverrides = {
+        @FetchProfile.FetchOverride(entity = User.class, association = "company", mode = FetchMode.JOIN)
+})
 @EqualsAndHashCode(of = "username")
-@ToString(exclude = {"company", "userChats"})
-//@ToString(exclude = {"company", "profile", "userChats"})
+@ToString(exclude = {"company", "userChats", "userPayments"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -22,7 +27,8 @@ import java.util.List;
 @Data
 @Table(name = "users", schema = "public")
 @Inheritance(strategy = InheritanceType.JOINED)
-public class User {
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "Users")
+public class User implements Comparable<User>, BaseEntity<Long> {
     @Id
     @GeneratedValue(generator = "user_gen", strategy = GenerationType.IDENTITY)
     @SequenceGenerator(name = "user_gen", sequenceName = "users_id_seq", allocationSize = 1)
@@ -49,6 +55,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
 
+    //@BatchSize(size = 7)
     @Builder.Default
     @OneToMany(mappedBy = "receiver")
     private List<Payment> userPayments = new ArrayList<>();
@@ -62,5 +69,9 @@ public class User {
         return personalInfo.getAge();
     }
 
+    @Override
+    public int compareTo(User o) {
+        return username.compareTo(o.username);
+    }
 }
 

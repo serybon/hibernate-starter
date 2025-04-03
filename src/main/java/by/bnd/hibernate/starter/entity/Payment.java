@@ -1,28 +1,28 @@
 package by.bnd.hibernate.starter.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Data
+//@ToString(exclude = "receiver")
 @Entity
 @Table(name = "payment", schema = "public")
-public class Payment {
+public class Payment implements BaseEntity<Long> {
     @Id
     @GeneratedValue(generator = "payment_gen", strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private BigDecimal amount;
+    private Integer amount;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @Version
+    private Long version;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "receiver_id", nullable = false)
     private User receiver;
 }

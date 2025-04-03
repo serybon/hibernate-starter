@@ -124,13 +124,13 @@ public class UserDaoTest {
     void findAllByFirstName() {
         @Cleanup Session session = sessionFactory.openSession();
         session.beginTransaction();
-        String searchedFirstName = "Jane";
-        List<User> users = userDao.findAll(session);
+
+        String searchedFirstName = "Bob";
+        List<User> users = userDao.findAllByFirstName(session, searchedFirstName);
         assertThat(users).isNotEmpty();
-        List<User> usersWithThSameFirstName = users.stream()
-                .filter(user -> user.getPersonalInfo().getFirstname().equals(searchedFirstName)).toList();
-        System.out.println(usersWithThSameFirstName);
-        assertThat(usersWithThSameFirstName).isNotEmpty();
+        for (User user : users) {
+            System.out.println(user);
+        }
         session.getTransaction().commit();
     }
 
@@ -161,6 +161,19 @@ public class UserDaoTest {
         List<User> selectedUsers = userDao.findAllByCompanyName(session, searchedCompanyName);
         selectedUsers.forEach(System.out::println);
         assertThat(selectedUsers).isNotEmpty();
+
+        session.getTransaction().commit();
+    }
+
+    @Test
+    void checkFindAllPaymentsByCompanyName() {
+        @Cleanup Session session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        String searchedCompanyName = session.get(Company.class, 1).getName();
+        List<Payment> payments = userDao.findAllPaymentsByCompanyName(session, searchedCompanyName);
+        payments.forEach(System.out::println);
+        assertThat(payments).isNotEmpty();
 
         session.getTransaction().commit();
     }

@@ -1,10 +1,10 @@
 package by.bnd.hibernate.starter.entity;
 
-import javax.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
+import javax.persistence.*;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 @ToString(exclude = "users")
 @EqualsAndHashCode(of = "name")
@@ -13,10 +13,11 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Company {
+@org.hibernate.annotations.Cache(usage =   CacheConcurrencyStrategy.READ_WRITE, region = "Companies")
+public class Company implements BaseEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     @Column(unique = true, nullable = false)
     private String name;
     @Builder.Default
